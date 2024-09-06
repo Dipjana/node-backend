@@ -13,3 +13,16 @@ DELETE /api/users/1 - Delete the USer with ID 1
 
 
 https://mockaroo.com/
+1725621403374:::1 GET: /favicon.ico
+1725622416930:::1 POST: /
+1725622535001:::1 GET: /user
+1725623424109:::1 GET: /user
+1725623467957:::1 POST: /
+1725623565600:::1 POST: /user
+1725623702123:::1 POST: /user
+1725623721594:::1 POST: /user
+1725623878314:::1 POST: /api/users
+1725623922038:::1 GET: /api/users
+1725623956785:::1 POST: /api/users
+1725624080570:::1 POST: /api/users
+1725624090773:::1 POST: /api/users

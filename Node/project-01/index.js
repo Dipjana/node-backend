@@ -13,16 +13,15 @@ app.get("/", (req, res) => {
 });
 
 // Connect to MongoDB
-connectMongoDB("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0")
+connectMongoDB("mongodb+srv://dipsundar_90:63m0DG1IY4efNnUJ@cluster0.gcyernc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     .then(() => console.log("Connected to MongoDB"))
 
 // Middlewares - Plugins
+app.use(express.urlencoded({extended: false}));
 app.use(logReqRes("log.txt"));
 
 // Routes
-
-
-app.use("/user", userRouter);
+app.use("/api/users", userRouter);
 
 
 app.listen(port, () => console.log("Server Started !"));
