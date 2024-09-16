@@ -1,5 +1,5 @@
 const URL = require('../models/url');
-
+const shortid = require("shortid");
 
 async function handleGenerateShortURL(req, res) {
     const body = req.body
@@ -10,8 +10,8 @@ async function handleGenerateShortURL(req, res) {
         redirectURL : body.url,
         visitHistory : []
     }) 
-
-    return res.status(201).json({shortId : shortID})
+    return res.render("home", {id : shortID})
+    // return res.status(201).json({shortId : shortID})
 }
 
 async function handleGetAnalytics(req, res) {
